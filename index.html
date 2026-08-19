@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> feedback form</title>
+</head>
+<body style="background-color: rgb(211, 244, 211);">
+    <div style="text-align: center; position: sticky; top: 0; margin: 0; padding: 10px; border-bottom: 3px  solid forestgreen; border-top: 3px solid forestgreen;">
+        <h1> Welcome to XYZ centre </h1>
+        <h2> We are eagerly waiting for your suggestions and feedback </h2>
+    </div><br><br>
+    
+    <form>
+        <p style="font-weight: bolder; font-size: larger; margin: 0;"> Enter your name: </p>
+        <input type="text" name="name"/> <br><br>
+
+        <p style="font-weight: bolder; font-size: larger; margin: 0;"> Select your course </p>
+        <select name = "course">
+        <option value="Select course"> Select course </option>
+        <option value="Course A"> Course A</option>
+        <option value="course b"> Course B</option>
+        <option value="course c"> Course C</option>
+        </select>
+    </form> <br>
+    <form action="/submit-feedback" method="post">
+        <label for="star-rating" style="font-weight: bolder; font-size: larger; margin: 0;"> Give Rating to your course  </label>
+        <select id="star-rating" name="Rating" required>
+            <option value=""> Select Stars</option>
+            <option value="5 stars "> ★★★★★ </option>
+            <option value="4 stars "> ★★★★</option>
+            <option value="3 stars "> ★★★</option>
+            <option value="2 stars "> ★★</option>
+            <option value="1 star "> ★</option>
+        </select>
+        <br>
+        <input type="submit" value=" Submit Rating" style="border-radius: 6px;"><br><br>
+
+        <textarea name = " suggestions " rows="15" cols="75">
+            write your experience and suggestions(if any)...
+        </textarea><br>
+        <input type="submit" name="submit" value=" Submit Suggestions">
+
+    </form>
+
+  
+</body>
+</html>
